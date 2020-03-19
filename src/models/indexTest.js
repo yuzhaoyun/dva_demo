@@ -35,7 +35,7 @@ export default {
       let rel = yield call(apis.testCnode)
       if (rel.data) {
         yield put({
-          typs: 'setName',
+          type: 'setName',
           data: rel.data
         })
       }
